@@ -64,7 +64,7 @@ func runControl(serverHost, localHost, remotePort string) {
 }
 
 func main() {
-	if len(os.Args) != 5 {
+	if len(os.Args) != 6 {
 		fmt.Println("Usage: tunnel.client <server_host> <control_port> <data_port> <local_host>:<local_port> <remote_port>")
 		fmt.Println("Example: tunnel.client 127.0.0.1 9000 9001 localhost:3306 33060")
 		os.Exit(1)
