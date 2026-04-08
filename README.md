@@ -27,7 +27,7 @@ go build -ldflags="-s -w" -o tunnel.server main.go
 ### Client
 ```bash
 cd client
-GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o tunnel.client main.go
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o tunnel.client main.go
 ```
 
 ## How to Use
