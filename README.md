@@ -30,12 +30,6 @@ cd client
 go build -ldflags="-s -w" -o tunnel.client main.go
 ```
 
-### Or use the build script
-```bash
-./build.sh
-```
-This creates `build/tunnel.server` and `build/tunnel.client` binaries, plus separate tar.gz archives for each.
-
 ## How to Use
 
 ### Running the Server
